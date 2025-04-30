@@ -1,0 +1,19 @@
+body {
+    font-family: 'Times New Roman', serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #0000EE;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
