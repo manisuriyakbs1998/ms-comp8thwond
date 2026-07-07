@@ -3,18 +3,15 @@
    Palette drawn from the sunrise mark: ember/gold sun, tide water
    ============================================================ */
 :root {
-  --ink: #1c2a2e;
-  --ink-soft: #52646a;
-  --cream: #fff9f1;
-  --cream-deep: #fbf0e2;
-  --ember: #e6602c;
-  --gold: #f4a93b;
-  --tide: #1a7a8a;
-  --tide-deep: #125b67;
-  --tide-light: #e6f2f1;
-  --border: rgba(28, 42, 46, 0.12);
-  --shadow: 0 8px 24px rgba(28, 42, 46, 0.08);
-  --radius: 14px;
+  --ink: #000000;
+  --ink-soft: #333333;
+  --cream: #ffffff;
+  --cream-deep: #f5f5f5;
+  --accent: #1a56db;
+  --accent-light: #eaf0fd;
+  --border: rgba(0, 0, 0, 0.12);
+  --shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  --radius: 12px;
 }
 
 * { box-sizing: border-box; }
@@ -31,7 +28,8 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
   color: var(--ink);
   line-height: 1.15;
   margin: 0 0 0.5em;
@@ -41,12 +39,12 @@ h1 { font-size: clamp(2rem, 5vw, 3rem); }
 h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); }
 h3 { font-size: 1.15rem; }
 
-em { font-style: italic; color: var(--ember); }
+em { font-style: normal; color: var(--accent); font-weight: 700; }
 
 p { margin: 0 0 1em; color: var(--ink-soft); }
 
-a { color: var(--tide); text-decoration: none; }
-a:hover { color: var(--ember); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
 
 .wrap {
   max-width: 800px;
@@ -73,12 +71,12 @@ a:hover { color: var(--ember); }
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 1.05rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--ink) !important;
 }
-.brand:hover { color: var(--ember) !important; }
+.brand:hover { color: var(--accent) !important; }
 .brand img { width: 32px; height: 32px; display: block; }
 
 .site-nav {
@@ -95,8 +93,8 @@ a:hover { color: var(--ember); }
 }
 .site-nav a:hover,
 .site-nav a.active {
-  color: var(--ember);
-  border-bottom-color: var(--ember);
+  color: var(--accent);
+  border-bottom-color: var(--accent);
 }
 
 /* ---------- Hero / profile block ---------- */
@@ -111,7 +109,7 @@ a:hover { color: var(--ember); }
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--tide);
+  color: var(--accent);
   font-weight: 600;
   margin-bottom: 14px;
 }
@@ -122,16 +120,31 @@ a:hover { color: var(--ember); }
   font-size: 1.05rem;
 }
 
+/* Two-column hero: copy on the left, photo + socials on the right */
+.hero-flex {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 56px 24px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+  text-align: left;
+}
+.hero-copy { flex: 1; min-width: 0; }
+.hero-flex h1 { margin-bottom: 0.4em; }
+.hero-flex .hero-sub { margin: 0; max-width: 440px; }
+
 .avatar-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 18px;
-  margin: 28px 0 8px;
+  gap: 16px;
+  flex-shrink: 0;
 }
 .avatar {
-  width: 128px;
-  height: 128px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   background: var(--cream-deep);
   border: 3px solid #fff;
@@ -143,11 +156,20 @@ a:hover { color: var(--ember); }
   display: flex;
   gap: 12px;
 }
+
+@media (max-width: 640px) {
+  .hero-flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+  .hero-flex .hero-sub { margin: 0 auto; }
+}
 .social-row a {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: var(--tide);
+  background: var(--accent);
   color: #fff !important;
   display: flex;
   align-items: center;
@@ -155,19 +177,22 @@ a:hover { color: var(--ember); }
   transition: background 0.15s ease, transform 0.15s ease;
 }
 .social-row a:hover {
-  background: var(--ember);
+  background: var(--ink);
   transform: translateY(-2px);
 }
 .social-row svg { width: 17px; height: 17px; fill: currentColor; }
 
-/* ---------- Horizon divider (signature element) ---------- */
+/* ---------- Divider ---------- */
 .horizon {
   max-width: 800px;
-  margin: 40px auto;
+  margin: 32px auto;
   padding: 0 24px;
-  height: 34px;
 }
-.horizon svg { width: 100%; height: 100%; display: block; }
+.horizon-line {
+  border: none;
+  border-top: 2px solid var(--accent);
+  margin: 0;
+}
 
 /* ---------- Framework cards ---------- */
 .framework-grid {
@@ -190,8 +215,8 @@ a:hover { color: var(--ember); }
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.72rem;
   letter-spacing: 0.05em;
-  color: var(--tide);
-  background: var(--tide-light);
+  color: var(--accent);
+  background: var(--accent-light);
   padding: 3px 8px;
   border-radius: 6px;
   margin-bottom: 10px;
@@ -217,16 +242,17 @@ a:hover { color: var(--ember); }
   margin: 8px auto 32px;
   padding: 26px 28px;
   border-radius: var(--radius);
-  background: linear-gradient(135deg, var(--ember), var(--gold));
-  color: #fff;
+  background: var(--cream-deep);
+  border: 1px solid var(--border);
+  color: var(--ink);
   text-align: center;
 }
-.cta-box h3 { color: #fff; margin-bottom: 0.3em; }
-.cta-box p { color: rgba(255,255,255,0.9); margin-bottom: 1em; }
+.cta-box h3 { color: var(--ink); margin-bottom: 0.3em; }
+.cta-box p { color: var(--ink-soft); margin-bottom: 1em; }
 .cta-button {
   display: inline-block;
-  background: #fff;
-  color: var(--ember) !important;
+  background: var(--accent);
+  color: #fff !important;
   font-weight: 600;
   padding: 10px 22px;
   border-radius: 999px;
@@ -251,7 +277,7 @@ a:hover { color: var(--ember); }
   box-shadow: var(--shadow);
 }
 .card-list .item-title {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
   font-size: 1.02rem;
   color: var(--ink);
@@ -261,7 +287,7 @@ a:hover { color: var(--ember); }
 .card-list a.pdf-link {
   font-size: 0.92rem;
   font-weight: 500;
-  color: var(--tide);
+  color: var(--accent);
 }
 .card-list .meta {
   font-family: 'IBM Plex Mono', monospace;
@@ -273,7 +299,7 @@ a:hover { color: var(--ember); }
 .mistake-entry {
   background: #fff;
   border: 1px solid var(--border);
-  border-left: 4px solid var(--ember);
+  border-left: 4px solid var(--accent);
   border-radius: var(--radius);
   padding: 16px 20px;
 }
@@ -285,7 +311,7 @@ a:hover { color: var(--ember); }
 .mistake-entry .prices {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.88rem;
-  color: var(--tide-deep);
+  color: var(--ink-soft);
   display: block;
   margin: 4px 0 6px;
 }
@@ -317,8 +343,8 @@ footer {
   padding: 28px 24px 40px;
 }
 .footer-quote {
-  font-family: 'Fraunces', Georgia, serif;
-  font-style: italic;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: normal;
   color: var(--ink-soft);
   font-size: 0.98rem;
   margin-bottom: 10px;
@@ -333,4 +359,14 @@ footer {
   body { font-size: 16px; }
   .header-inner { justify-content: center; text-align: center; }
   .site-nav { justify-content: center; }
+}
+
+
+/* Contact page: links in black, not accent blue */
+.contact-card a {
+  color: var(--ink);
+  text-decoration: underline;
+}
+.contact-card a:hover {
+  color: var(--accent);
 }
