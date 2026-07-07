@@ -1,58 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-645ME7GNW5"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-645ME7GNW5');
-    </script>
-    <title>Track Record</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Track Record — Compounding is the 8th Wonder</title>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-645ME7GNW5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-645ME7GNW5');
+</script>
+
+<link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
-</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h2>Track Record</h2>
-    <ul>
-        <p>
-            <a href="Interim report for the period 1 Jan-30 Jun 2026.pdf" target="_blank">
-                3. Interim Report For the period ended June 30th, 2026
-            </a>
-        </p>
-        <p>
-            <a href="Report for Jan 2025 - Dec 2025.pdf" target="_blank">
-                2. Report For the period January 1 - December 31, 2025
-            </a>
-        </p>
-        <p>
-            <a href="interim report for the period 1 Jan-30 Jun 2025.pdf" target="_blank">
-                1. Interim Report For the period ended June 30th, 2025
-            </a>
-        </p>
-    </ul>
 
-    <a href="index.html">Back to Home</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="Compounding is the 8th Wonder logo">
+      <span>Compounding is the 8th Wonder</span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="track-record.html" class="active">Track Record</a>
+      <a href="mistakes.html">Mistakes</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
 
-    <footer>
-        <div style="
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 14px;
-            padding: 15px 20px;
-            background-color: #f9f9f9;
-            border-top: 1px solid #ccc;
-            text-align: right;
-            overflow-wrap: anywhere;
-            box-sizing: border-box;">
-        </div>
-    </footer>
+<section class="hero" style="padding-bottom:0;">
+  <span class="eyebrow">The receipts</span>
+  <h1>Track Record</h1>
+  <p class="hero-sub">Periodic reports, in order, no cherry-picking.</p>
+</section>
+
+<div class="horizon" aria-hidden="true">
+  <svg viewBox="0 0 800 34" preserveAspectRatio="none">
+    <path d="M0 8 C120 8 160 8 800 8" stroke="#1a7a8a" stroke-width="2" fill="none" opacity="0.85"/>
+    <path d="M40 16 C220 16 260 16 760 16" stroke="#1a7a8a" stroke-width="2" fill="none" opacity="0.55"/>
+    <path d="M0 24 C160 24 300 24 800 24" stroke="#1a7a8a" stroke-width="2" fill="none" opacity="0.3"/>
+  </svg>
+</div>
+
+<section class="section">
+  <ul class="card-list">
+    <li>
+      <span class="item-title">3. Interim Report — Jan 1 to Jun 30, 2026</span>
+      <a class="pdf-link" href="Interim report for the period 1 Jan-30 Jun 2026.pdf" target="_blank">📄 View PDF</a>
+    </li>
+    <li>
+      <span class="item-title">2. Annual Report — Jan 1 to Dec 31, 2025</span>
+      <a class="pdf-link" href="Report for Jan 2025 - Dec 2025.pdf" target="_blank">📄 View PDF</a>
+    </li>
+    <li>
+      <span class="item-title">1. Interim Report — Jan 1 to Jun 30, 2025</span>
+      <a class="pdf-link" href="interim report for the period 1 Jan-30 Jun 2025.pdf" target="_blank">📄 View PDF</a>
+    </li>
+  </ul>
+  <a href="index.html" class="back-link">← Back to Home</a>
+</section>
+
+<footer>
+  <p class="footer-quote">Don't take life too seriously — have fun along the way.</p>
+  <p class="footer-fine">© 2026 Compounding is the 8th Wonder</p>
+</footer>
+
 </body>
 </html>
