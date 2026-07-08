@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bookshelf — Compounding is the 8th Wonder</title>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-645ME7GNW5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-645ME7GNW5');
+</script>
+
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="logo.png" alt="Compounding is the 8th Wonder logo">
+      <div class="brand-text">
+        <span class="brand-title">Compounding is the 8th Wonder</span>
+        <span class="brand-sub">Personal investing journal</span>
+      </div>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="blogs.html" class="active">Blogs</a>
+      <a href="track-record.html">Track Record</a>
+      <a href="bookshelf.html" class="active">Bookshelf</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:0;">
+  <span class="eyebrow">Write-ups</span>
+  <h1>Bookshelf</h1>
+</section>
+
+<div class="horizon">
+  <hr class="horizon-line">
+</div>
+
+<section class="section">
+  <ul class="card-list">
+    <li>
+      <span class="item-title">Books on Investing</span>
+      <a class="pdf-link" href="hacks.pdf" target="_blank">📄 View PDF</a>
+    </li>
+    <li>
+      <span class="item-title">Books on Biography</span>
+      <a class="pdf-link" href="AMR Report.pdf" target="_blank">📄 View PDF</a>
+    </li>
+    <li>
+      <span class="item-title">Books on Evolution</span>
+      <a class="pdf-link" href="Indusind.pdf" target="_blank">📄 View PDF</a>
+    </li>
+    <li>
+      <span class="item-title">Books on History</span>
+      <a class="pdf-link" href="final pginvit Report (1).pdf" target="_blank">📄 View PDF</a>
+    </li>
+  </ul>
+  <a href="index.html" class="back-link">← Back to Home</a>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-main">
+      <p class="footer-quote">Don't take life too seriously — have fun along the way.</p>
+      <p class="footer-fine">© 2026 Compounding is the 8th Wonder</p>
+    </div>
+    <p class="footer-address">Contact: #07-157, Blk 403C<br>Fernvale, Singapore 793403</p>
+  </div>
+</footer>
+
+</body>
+</html>
