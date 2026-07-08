@@ -310,6 +310,16 @@ a:hover { text-decoration: underline; }
   font-size: 0.82rem;
   color: var(--ink-soft);
 }
+.card-list li p {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin: 0 0 10px;
+}
+.card-list li p:last-child {
+  margin-bottom: 0;
+}
+
+/* Mistakes entries */
 
 /* Mistakes entries */
 .mistake-entry {
