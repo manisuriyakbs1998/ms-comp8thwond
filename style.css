@@ -424,3 +424,73 @@ footer {
 .contact-card a:hover {
   color: var(--accent);
 }
+/* ---------- Two-column layout with sidebar ---------- */
+.content-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 8px 24px 32px;
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+.content-main {
+  flex: 1;
+  min-width: 0;
+}
+.sidebar-box {
+  flex-shrink: 0;
+  width: 300px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  box-shadow: var(--shadow);
+}
+.sidebar-box h3 {
+  margin-bottom: 0.7em;
+}
+
+.perf-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+.perf-table th,
+.perf-table td {
+  padding: 8px 4px;
+  text-align: right;
+  border-bottom: 1px solid var(--border);
+}
+.perf-table th:first-child,
+.perf-table td:first-child {
+  text-align: left;
+}
+.perf-table th {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 0.78rem;
+}
+.perf-table td:first-child {
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
+.perf-table td {
+  font-family: 'IBM Plex Mono', monospace;
+  color: var(--ink);
+}
+.perf-table tr:last-child td,
+.perf-table tr:last-child th {
+  border-bottom: none;
+}
+.perf-date {
+  display: block;
+  font-size: 0.68rem;
+  color: var(--ink-soft);
+  font-weight: 400;
+}
+
+@media (max-width: 800px) {
+  .content-grid { flex-direction: column; }
+  .sidebar-box { width: 100%; }
+}
