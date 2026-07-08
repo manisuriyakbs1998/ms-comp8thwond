@@ -71,7 +71,7 @@ a:hover { text-decoration: underline; }
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: Georgia, 'Times New Roman', serif;
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--ink) !important;
@@ -294,7 +294,7 @@ a:hover { text-decoration: underline; }
   box-shadow: var(--shadow);
 }
 .card-list .item-title {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: Georgia, 'Times New Roman', serif;
   font-weight: 600;
   font-size: 1.02rem;
   color: var(--ink);
@@ -383,7 +383,7 @@ footer {
   min-width: 220px;
 }
 .footer-quote {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: Georgia, 'Times New Roman', serif;
   font-style: normal;
   color: var(--ink-soft);
   font-size: 0.98rem;
