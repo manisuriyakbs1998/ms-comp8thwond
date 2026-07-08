@@ -47,7 +47,7 @@ a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 .wrap {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -58,7 +58,7 @@ a:hover { text-decoration: underline; }
   background: var(--cream);
 }
 .header-inner {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 18px 24px;
   display: flex;
@@ -116,7 +116,7 @@ a:hover { text-decoration: underline; }
 
 /* ---------- Hero / profile block ---------- */
 .hero {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 56px 24px 8px;
   text-align: center;
@@ -139,7 +139,7 @@ a:hover { text-decoration: underline; }
 
 /* Two-column hero: copy on the left, photo + socials on the right */
 .hero-flex {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 56px 24px 8px;
   display: flex;
@@ -247,7 +247,7 @@ a:hover { text-decoration: underline; }
 
 /* ---------- Sections ---------- */
 .section {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 8px 24px 32px;
 }
@@ -255,7 +255,7 @@ a:hover { text-decoration: underline; }
 
 /* ---------- CTA (resume) ---------- */
 .cta-box {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 8px auto 32px;
   padding: 26px 28px;
   border-radius: var(--radius);
@@ -369,7 +369,7 @@ footer {
   padding: 28px 24px 40px;
 }
 .footer-inner {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto;
   display: flex;
   align-items: flex-end;
