@@ -494,3 +494,23 @@ footer {
   .content-grid { flex-direction: column; }
   .sidebar-box { width: 100%; }
 }
+/* ---------- Full-width philosophy band ---------- */
+.philosophy-band {
+  background: var(--accent);
+  color: #fff;
+  padding: 56px 24px;
+  text-align: center;
+}
+.philosophy-band .band-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.philosophy-band h2 {
+  color: #fff;
+  margin-bottom: 0.5em;
+}
+.philosophy-band p {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  font-size: 1.05rem;
+}
