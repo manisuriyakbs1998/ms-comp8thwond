@@ -76,6 +76,22 @@ a:hover { text-decoration: underline; }
   font-weight: 700;
   color: var(--ink) !important;
 }
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+.brand-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+.brand-sub {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  margin-top: 2px;
+}
 .brand:hover { color: var(--accent) !important; }
 .brand img { width: 32px; height: 32px; display: block; }
 
