@@ -111,6 +111,42 @@
   </aside>
 </section>
 
+<section class="holdings-section">
+  <div class="holdings-tabs">
+    <input type="radio" name="holdings-tab" id="tab-current" class="tab-input" checked>
+    <label for="tab-current" class="tab-label">Current</label>
+    <input type="radio" name="holdings-tab" id="tab-divested" class="tab-input">
+    <label for="tab-divested" class="tab-label">Divested</label>
+    <div class="tab-header"></div>
+
+    <div class="tab-panel panel-current">
+      <details class="holding-item">
+        <summary>Company Name</summary>
+        <div class="holding-body">
+          <p>Short description of the business and why it's in the portfolio.</p>
+          <p>Website: <a href="https://example.com" target="_blank">www.example.com</a></p>
+        </div>
+      </details>
+      <details class="holding-item">
+        <summary>Another Company</summary>
+        <div class="holding-body">
+          <p>Short description of the business and why it's in the portfolio.</p>
+          <p>Website: <a href="https://example.com" target="_blank">www.example.com</a></p>
+        </div>
+      </details>
+    </div>
+
+    <div class="tab-panel panel-divested">
+      <details class="holding-item">
+        <summary>Old Company</summary>
+        <div class="holding-body">
+          <p>Short description, plus a note on why it was sold.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
 <section class="philosophy-band">
   <div class="band-inner">
     <h2>Investing Philosophy</h2>
